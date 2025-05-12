@@ -33,7 +33,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.4.2</version>
-        <archive>
+        <configuration>
+          <archive>
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
@@ -48,7 +49,7 @@
         <version>3.5.0</version>
         <executions>
           <execution>
-           >enforce-maven</id>
+            <id>enforce-maven</id>
             <goals>
               <goal>enforce</goal>
             </goals>
