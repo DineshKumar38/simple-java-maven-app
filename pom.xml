@@ -22,7 +22,7 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-       aven-compiler-plugin</artifactId>
+        <artifactId>maven-compiler-plugin</artifactId>
         <version>3.10.1</version>
         <configuration>
           <release>21</release>
@@ -33,11 +33,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.4.2</version>
-        <configuration>
-          <archive>
+        <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-             /</classpathPrefix>
+              <classpathPrefix>lib/</classpathPrefix>
               <mainClass>com.mycompany.app.App</mainClass>
             </manifest>
           </archive>
@@ -49,7 +48,7 @@
         <version>3.5.0</version>
         <executions>
           <execution>
-            <id>enforce-maven</id>
+           >enforce-maven</id>
             <goals>
               <goal>enforce</goal>
             </goals>
